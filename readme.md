@@ -1,0 +1,31 @@
+웹에서 편리하게 간략한 메모를 저장할 수있는 서비를 개발
+각 메모는 google firebase와 연동하여 동작함
+해당 서비스는 웹에서 좌측상단에 메모 게시판을 따로 생성할 수 있고 간단한 메모를 작성하면 내부 게시판에 저장됨
+저장된 내용은 firebase에 DB에 저장
+서비스의 구성은 html, js, css로 구성
+상단에 메모를 입력하는 입력란 구성. 저장버튼 생성
+하단 좌측상단부터 해당 메모를 포스트잇을 붙이는것처럼 고정
+서버 실행은 live Server로 할것
+메모 작성후 엔터키 입력 또는 저장버튼 클릭하면 메모 완성
+
+#firebase접큰 키
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBx7YAtkx_efj02IxmRX2kq4ijxC5pNlyc",
+    authDomain: "memomemo-d3a5c.firebaseapp.com",
+    projectId: "memomemo-d3a5c",
+    storageBucket: "memomemo-d3a5c.firebasestorage.app",
+    messagingSenderId: "984053616264",
+    appId: "1:984053616264:web:5bf52e156f9485a7fb193d"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+위 접근 키를 가지고 firebase DB에 생성된 메모를 저장할것

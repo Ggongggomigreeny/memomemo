@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단 메모 서비스 데모</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-panel">
+        <input type="text" id="memo-input" placeholder="메모를 입력하세요">
+        <button id="save-btn">저장</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js';
+        import { getFirestore, collection, addDoc, getDocs } from 'https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js';
+
+        // Firebase config from readme.md
+        const firebaseConfig = {
+            apiKey: "AIzaSyBx7YAtkx_efj02IxmRX2kq4ijxC5pNlyc",
+            authDomain: "memomemo-d3a5c.firebaseapp.com",
+            projectId: "memomemo-d3a5c",
+            storageBucket: "memomemo-d3a5c.firebasestorage.app",
+            messagingSenderId: "984053616264",
+            appId: "1:984053616264:web:5bf52e156f9485a7fb193d"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        window.db = db;
+        window.collection = collection;
+        window.addDoc = addDoc;
+        window.getDocs = getDocs;
+    </script>
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\N2\Desktop\PJT\index.html
