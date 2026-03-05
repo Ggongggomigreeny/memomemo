@@ -8,24 +8,6 @@
 서버 실행은 live Server로 할것
 메모 작성후 엔터키 입력 또는 저장버튼 클릭하면 메모 완성
 
-#firebase접큰 키
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBx7YAtkx_efj02IxmRX2kq4ijxC5pNlyc",
-    authDomain: "memomemo-d3a5c.firebaseapp.com",
-    projectId: "memomemo-d3a5c",
-    storageBucket: "memomemo-d3a5c.firebasestorage.app",
-    messagingSenderId: "984053616264",
-    appId: "1:984053616264:web:5bf52e156f9485a7fb193d"
-  };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
 위 접근 키를 가지고 firebase DB에 생성된 메모를 저장할것
